@@ -1,4 +1,4 @@
-# 📚 ManageEdu: Gestión de Proyectos Educativos
+# 📚 ManageEdu: Desarrollo del módulo “manage” con Odoo ERP; para gestionar proyectos usando metodologías ágiles: scrum
 
 Bienvenido al repositorio de **ManageEdu**, un módulo desarrollado para Odoo que facilita la gestión de proyectos educativos. Este módulo está diseñado para optimizar el seguimiento de tareas, historias, tecnologías y sprints, proporcionando una herramienta intuitiva y eficiente para equipos de desarrollo y planificación.
 
