@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record model="ir.ui.view" id="manageedu.sprint_list">
+            <field name="name">manageedu sprint list</field>
+            <field name="model">manageedu.sprint</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="manageedu.sprint_form">
+            <field name="name">manageedu sprint form</field>
+            <field name="model">manageedu.sprint</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="project"/>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="duration"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="tasks"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="manageedu.action_sprint_window">
+            <field name="name">manageedu sprint window</field>
+            <field name="res_model">manageedu.sprint</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Sprints" id="manageedu.menu_1_sprint_list" parent="manageedu.menu_1" action="manageedu.action_sprint_window"/>
+
+
+    </data>
+
+
+</odoo>

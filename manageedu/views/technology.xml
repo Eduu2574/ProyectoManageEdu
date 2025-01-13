@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="manageedu.technology_list">
+            <field name="name">manageedu technology list</field>
+            <field name="model">manageedu.technology</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+    </record>
+
+    <record model="ir.ui.view" id="manageedu.technology_form">
+            <field name="name">manageedu technology form</field>
+            <field name="model">manageedu.technology</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="photo"/>  
+                        <field name="tasks"/>                      
+                    </group>
+                </form>
+            </field>
+    </record>
+
+        
+ 
+    <record model="ir.actions.act_window" id="manageedu.action_technology_window">
+      <field name="name">manageedu technology window</field>
+      <field name="res_model">manageedu.technology</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- Menú raíz -->
+
+    <menuitem name="manageedu 24/25" id="manageedu.menu_root"/>
+
+    <!-- Segundo nivel -->
+
+    <menuitem name="Management" id="manageedu.menu_1" parent="manageedu.menu_root"/>
+    <!--menuitem name="Menu 2" id="manageedu.menu_2" parent="manageedu.menu_root"/>
+-->
+    <!-- actions -->
+    
+    <menuitem name="Technologies" id="manageedu.menu_1_technology_list" parent="manageedu.menu_1"
+              action="manageedu.action_technology_window"/>
+
+    
+              
+    
+  </data>
+</odoo>

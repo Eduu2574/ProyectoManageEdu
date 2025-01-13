@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <record model="ir.ui.view" id="manageedu.history_form">
+            <field name="name">manageedu history form</field>
+            <field name="model">manageedu.history</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="project"/>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="tasks"/>
+                        <field name="used_technologies"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="manageedu.action_history_window">
+            <field name="name">manageedu history window</field>
+            <field name="res_model">manageedu.history</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Histories" id="manageedu.menu_1_history_list" parent="manageedu.menu_1" action="manageedu.action_history_window"/>
+
+    </data>
+
+</odoo>

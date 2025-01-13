@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="manageedu.task_list">
+            <field name="name">manageedu task list</field>
+            <field name="model">manageedu.task</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="priority"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="manageedu.task_form">
+            <field name="name">manageedu task form</field>
+            <field name="model">manageedu.task</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="definition_date"/>
+                        <field name="priority"/>
+                        <field name="history"/> 
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="is_paused"/>
+                        <field name="sprint"/>
+                        <field name="technologies"/>
+                        <field name="project"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="manageedu.action_task_window">
+            <field name="name">manageedu task window</field>
+            <field name="res_model">manageedu.task</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'group_by': 'priority'}</field>
+        </record>
+
+        <menuitem name="Tasks" id="manageedu.menu_1_task_list" parent="manageedu.menu_1" action="manageedu.action_task_window"/>
+    </data>
+</odoo>

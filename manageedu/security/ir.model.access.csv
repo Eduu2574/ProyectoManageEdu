@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_manageedu_task,manageedu.task,model_manageedu_task,base.group_user,1,1,1,1
+access_manageedu_sprint,manageedu.sprint,model_manageedu_sprint,base.group_user,1,1,1,1
+access_manageedu_project,manageedu.project,model_manageedu_project,base.group_user,1,1,1,1
+access_manageedu_history,manageedu.history,model_manageedu_history,base.group_user,1,1,1,1
+access_manageedu_technology,manageedu.technology,model_manageedu_technology,base.group_user,1,1,1,1
