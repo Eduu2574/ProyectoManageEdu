@@ -16,7 +16,7 @@ El módulo está pensado para ser flexible y fácilmente personalizable según l
 
 ---
 
-## 📖 Documentación del Proyecto
+## 📖 Memoria del Proyecto
 
 Para más información sobre el diseño, desarrollo y funcionamiento del módulo, puedes consultar la memoria del proyecto:  
 [📄 **Memoria del Proyecto**](https://drive.google.com/drive/folders/16g1Pb7jZ4xFyrzNfO9_8oGqyYk7rv-rR?usp=sharing)
