@@ -94,7 +94,7 @@ class project(models.Model):
     name = fields.Char(string="Nombre")
     description = fields.Text(string="Descripción")
     histories = fields.One2many(comodel_name="manageedu.history", inverse_name="project")
-    sprints = fields.One2many(comodel_name="manageedu.sprint", inverse_name="project") #No estaba en el proyecto original
+    sprints = fields.One2many(comodel_name="manageedu.sprint", inverse_name="project")
 
 
 class history(models.Model):
